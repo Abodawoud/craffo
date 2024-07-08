@@ -513,6 +513,33 @@
           el: '.swiper-pagination',
           clickable: true,
         },
+        on: {
+          slideChange: function () {
+            // Reset animations on all slides
+            var slides = document.querySelectorAll('.swiper-slide');
+            slides.forEach(function (slide) {
+              var fadeElements = slide.querySelectorAll(
+                '[class*="fade-up-col"]'
+              );
+              fadeElements.forEach(function (element) {
+                element.style.animation = 'none';
+                void element.offsetWidth; // Trigger reflow to reset animation
+                element.style.animation = null;
+              });
+            });
+
+            // Trigger animations on active slide
+            var activeSlide = swiper.slides[swiper.activeIndex];
+            var activeFadeElements = activeSlide.querySelectorAll(
+              '[class*="fade-up-col"]'
+            );
+            activeFadeElements.forEach(function (element) {
+              element.style.animation = `fadeUp ${
+                element.dataset.animationDuration || '0.5s'
+              } ease-in-out`;
+            });
+          },
+        },
       });
     </script>
   </body>
