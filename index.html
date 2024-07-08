@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focal - Carbon Theme</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <nav class="px-10 py-7 max-sm:p-5 relative w-full">
+      <div class="flex items-center">
+        <div class="max-lg:block hidden flex-1">
+          <ul class="flex gap-6 max-sm:gap-5">
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                />
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <div class="lg:flex-1">
+          <img
+            class="Focal-image"
+            height="84"
+            width="424"
+            src="https://focal-theme-carbon.myshopify.com/cdn/shop/files/logo-focal.png?v=1630492228&width=200"
+            alt="FOCAL"
+          />
+        </div>
+        <div
+          class="mx-12 max-lg:hidden flex justify-center flex-auto max-w-max"
+        >
+          <ul class="flex space-x-8">
+            <li aria-expanded="false" class="navigator-links" data-menu="1">
+              <a href="#">Shop by Category</a>
+            </li>
+            <li aria-expanded="false" class="navigator-links" data-menu="2">
+              <a href="#">Shop by Device</a>
+            </li>
+            <li aria-expanded="false" class="navigator-links" data-menu="3">
+              <a href="#">Collections</a>
+            </li>
+            <li aria-expanded="false" class="navigator-links" data-menu="4">
+              <a href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex-1 flex items-center justify-end">
+          <ul class="flex items-center gap-5">
+            <li class="cursor-pointer max-sm:hidden block">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                />
+              </svg>
+            </li>
+            <li class="cursor-pointer max-lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                />
+              </svg>
+            </li>
+            <li class="cursor-pointer max-sm:hidden block">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                />
+              </svg>
+            </li>
+            <li class="cursor-pointer max-sm:flex-1 relative">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                />
+              </svg>
+              <span class="badge">0</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu hidden" id="mega-menu-1">
+        <div class="px-10 py-12 grid grid-cols-3 fade-up">
+          <div class="flex items-start col-span-1">
+            <div class="m-10 fade-up-col-1">
+              <h2 class="mb-4 font-semibold">Protect & Carry</h2>
+              <ul>
+                <li class="pb-1.5 hover:text-gray-500 cursor-pointer">
+                  iPhone Cases
+                </li>
+                <li class="pb-1.5 hover:text-gray-500 cursor-pointer">
+                  AirPods Cases
+                </li>
+                <li class="pb-1.5 hover:text-gray-500 cursor-pointer">
+                  Sleeves
+                </li>
+                <li class="hover:text-gray-500 cursor-pointer">Accessories</li>
+              </ul>
+            </div>
+            <div class="m-10 fade-up-col-2">
+              <h2 class="mb-4 font-semibold">Protect & Carry</h2>
+              <ul>
+                <li class="pb-1.5 hover:text-gray-500 cursor-pointer">USB-A</li>
+                <li class="pb-1.5 hover:text-gray-500 cursor-pointer">USB-C</li>
+                <li class="pb-1.5 hover:text-gray-500 cursor-pointer">
+                  Lightning
+                </li>
+                <li class="pb-1.5 hover:text-gray-500 cursor-pointer">
+                  Apple Watch
+                </li>
+                <li class="hover:text-gray-500 cursor-pointer">View Alls</li>
+              </ul>
+            </div>
+          </div>
+          <div class="grid grid-cols-3 gap-5 col-span-2">
+            <a
+              href="#"
+              class="text-center flex flex-col justify-center items-center fade-up-col-3"
+            >
+              <div class="max-w-full overflow-hidden">
+                <img
+                  src="https://focal-theme-carbon.myshopify.com/cdn/shop/files/iphone-cases.jpg?v=1630492487&width=560"
+                  alt=""
+                />
+              </div>
+              <p class="font-semibold mt-3 mb-1.5">iPhone Cases</p>
+              <span>Give your iPhone one-of-a-kind character</span>
+            </a>
+            <a
+              href="#"
+              class="text-center flex flex-col justify-center items-center fade-up-col-4"
+            >
+              <div class="max-w-full overflow-hidden">
+                <img
+                  src="https://focal-theme-carbon.myshopify.com/cdn/shop/files/iphone-cases.jpg?v=1630492487&width=560"
+                  alt=""
+                />
+              </div>
+              <p class="font-semibold mt-3 mb-1.5">iPhone Cases</p>
+              <span>Give your iPhone one-of-a-kind character</span>
+            </a>
+            <a
+              href="#"
+              class="text-center flex flex-col justify-center items-center fade-up-col-5"
+            >
+              <div class="max-w-full overflow-hidden">
+                <img
+                  src="https://focal-theme-carbon.myshopify.com/cdn/shop/files/iphone-cases.jpg?v=1630492487&width=560"
+                  alt=""
+                />
+              </div>
+              <p class="font-semibold mt-3 mb-1.5">iPhone Cases</p>
+              <span>Give your iPhone one-of-a-kind character</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="menu hidden" id="mega-menu-2">
+        <div class="px-10 py-12 grid grid-cols-3 fade-up">
+          <div class="flex items-start col-span-1">
+            <div class="m-10 fade-up-col-1">
+              <h2 class="mb-4 font-semibold">Protect & Carry</h2>
+              <ul>
+                <li class="pb-1.5 hover:text-gray-500 cursor-pointer">
+                  iPhone Cases
+                </li>
+                <li class="pb-1.5 hover:text-gray-500 cursor-pointer">
+                  AirPods Cases
+                </li>
+                <li class="pb-1.5 hover:text-gray-500 cursor-pointer">
+                  Sleeves
+                </li>
+                <li class="hover:text-gray-500 cursor-pointer">Accessories</li>
+              </ul>
+            </div>
+            <div class="m-10 fade-up-col-2">
+              <h2 class="mb-4 font-semibold">Protect & Carry</h2>
+              <ul>
+                <li class="pb-1.5 hover:text-gray-500 cursor-pointer">USB-A</li>
+                <li class="pb-1.5 hover:text-gray-500 cursor-pointer">USB-C</li>
+                <li class="pb-1.5 hover:text-gray-500 cursor-pointer">
+                  Lightning
+                </li>
+                <li class="pb-1.5 hover:text-gray-500 cursor-pointer">
+                  Apple Watch
+                </li>
+                <li class="hover:text-gray-500 cursor-pointer">View Alls</li>
+              </ul>
+            </div>
+          </div>
+          <div class="grid grid-cols-3 gap-5 col-span-2">
+            <a
+              href="#"
+              class="text-center flex flex-col justify-center items-center fade-up-col-3"
+            >
+              <div class="max-w-full overflow-hidden">
+                <img
+                  src="https://focal-theme-carbon.myshopify.com/cdn/shop/files/iphone-cases.jpg?v=1630492487&width=560"
+                  alt=""
+                />
+              </div>
+              <p class="font-semibold mt-3 mb-1.5">iPhone Cases</p>
+              <span>Give your iPhone one-of-a-kind character</span>
+            </a>
+            <a
+              href="#"
+              class="text-center flex flex-col justify-center items-center fade-up-col-4"
+            >
+              <div class="max-w-full overflow-hidden">
+                <img
+                  src="https://focal-theme-carbon.myshopify.com/cdn/shop/files/iphone-cases.jpg?v=1630492487&width=560"
+                  alt=""
+                />
+              </div>
+              <p class="font-semibold mt-3 mb-1.5">iPhone Cases</p>
+              <span>Give your iPhone one-of-a-kind character</span>
+            </a>
+            <a
+              href="#"
+              class="text-center flex flex-col justify-center items-center fade-up-col-5"
+            >
+              <div class="max-w-full overflow-hidden">
+                <img
+                  src="https://focal-theme-carbon.myshopify.com/cdn/shop/files/iphone-cases.jpg?v=1630492487&width=560"
+                  alt=""
+                />
+              </div>
+              <p class="font-semibold mt-3 mb-1.5">iPhone Cases</p>
+              <span>Give your iPhone one-of-a-kind character</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="menu hidden" id="mega-menu-3">
+        <div class="px-10 py-12 grid grid-cols-3 fade-up">
+          <div class="flex items-start col-span-1">
+            <div class="m-10 fade-up-col-1">
+              <h2 class="mb-4 font-semibold">Protect & Carry</h2>
+              <ul>
+                <li class="pb-1.5 hover:text-gray-500 cursor-pointer">
+                  iPhone Cases
+                </li>
+                <li class="pb-1.5 hover:text-gray-500 cursor-pointer">
+                  AirPods Cases
+                </li>
+                <li class="pb-1.5 hover:text-gray-500 cursor-pointer">
+                  Sleeves
+                </li>
+                <li class="hover:text-gray-500 cursor-pointer">Accessories</li>
+              </ul>
+            </div>
+            <div class="m-10 fade-up-col-2">
+              <h2 class="mb-4 font-semibold">Protect & Carry</h2>
+              <ul>
+                <li class="pb-1.5 hover:text-gray-500 cursor-pointer">USB-A</li>
+                <li class="pb-1.5 hover:text-gray-500 cursor-pointer">USB-C</li>
+                <li class="pb-1.5 hover:text-gray-500 cursor-pointer">
+                  Lightning
+                </li>
+                <li class="pb-1.5 hover:text-gray-500 cursor-pointer">
+                  Apple Watch
+                </li>
+                <li class="hover:text-gray-500 cursor-pointer">View Alls</li>
+              </ul>
+            </div>
+          </div>
+          <div class="grid grid-cols-3 gap-5 col-span-2">
+            <a
+              href="#"
+              class="text-center flex flex-col justify-center items-center fade-up-col-3"
+            >
+              <div class="max-w-full overflow-hidden">
+                <img
+                  src="https://focal-theme-carbon.myshopify.com/cdn/shop/files/iphone-cases.jpg?v=1630492487&width=560"
+                  alt=""
+                />
+              </div>
+              <p class="font-semibold mt-3 mb-1.5">iPhone Cases</p>
+              <span>Give your iPhone one-of-a-kind character</span>
+            </a>
+            <a
+              href="#"
+              class="text-center flex flex-col justify-center items-center fade-up-col-4"
+            >
+              <div class="max-w-full overflow-hidden">
+                <img
+                  src="https://focal-theme-carbon.myshopify.com/cdn/shop/files/iphone-cases.jpg?v=1630492487&width=560"
+                  alt=""
+                />
+              </div>
+              <p class="font-semibold mt-3 mb-1.5">iPhone Cases</p>
+              <span>Give your iPhone one-of-a-kind character</span>
+            </a>
+            <a
+              href="#"
+              class="text-center flex flex-col justify-center items-center fade-up-col-5"
+            >
+              <div class="max-w-full overflow-hidden">
+                <img
+                  src="https://focal-theme-carbon.myshopify.com/cdn/shop/files/iphone-cases.jpg?v=1630492487&width=560"
+                  alt=""
+                />
+              </div>
+              <p class="font-semibold mt-3 mb-1.5">iPhone Cases</p>
+              <span>Give your iPhone one-of-a-kind character</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="swiper mySwiper w-full lg:h-[85vh] h-[80vh]">
+      <div class="swiper-wrapper cursor-grab">
+        <div class="swiper-slide relative">
+          <!-- Image 1 -->
+          <img
+            src="https://focal-theme-carbon.myshopify.com/cdn/shop/files/tom-dixon-lp-tile-1.jpg?v=1630492908&width=1600"
+            alt="Slide 1"
+            class="w-full h-full object-cover"
+          />
+          <!-- Text Overlay -->
+          <div
+            class="absolute top-1/2 left-0 transform -translate-y-1/2 text-white ml-4 sm:ml-14 w-full mr-auto px-4 sm:px-0"
+          >
+            <h2
+              class="fade-up-col-1 text-xl sm:text-2xl md:text-3xl lg:text-4xl"
+            >
+              PREMIUM COLLECTION
+            </h2>
+            <p
+              class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl my-4 sm:my-8 font-bold flex flex-col"
+            >
+              <span class="fade-up-col-2">THE</span>
+              <span class="fade-up-col-3">HERITAGE</span>
+              <span class="fade-up-col-4">COLLECTION</span>
+            </p>
+            <div
+              class="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full fade-up-col-5"
+            >
+              <button
+                class="bg-[#e5ff34] text-black px-4 py-2 sm:px-9 sm:py-5 w-44 btn-hovernig"
+              >
+                LEARN MORE
+              </button>
+              <button
+                class="bg-[#e5ff34] text-black px-4 py-2 sm:px-9 sm:py-5 w-44 btn-hovernig"
+              >
+                SHOP
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide relative">
+          <!-- Image 2 -->
+          <img
+            src="https://focal-theme-carbon.myshopify.com/cdn/shop/files/mk-lp-tile-1.jpg?v=1630493139&width=1600"
+            alt="Slide 2"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute top-1/2 left-0 transform -translate-y-1/2 text-white ml-4 sm:ml-14 w-full mr-auto px-4 sm:px-0"
+          >
+            <h2
+              class="fade-up-col-1 text-xl sm:text-2xl md:text-3xl lg:text-4xl"
+            >
+              PREMIUM COLLECTION
+            </h2>
+            <p
+              class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl my-4 sm:my-8 font-bold flex flex-col"
+            >
+              <span class="fade-up-col-2">THE</span>
+              <span class="fade-up-col-3">HERITAGE</span>
+              <span class="fade-up-col-4">COLLECTION</span>
+            </p>
+            <div
+              class="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full fade-up-col-5"
+            >
+              <button
+                class="bg-[#e5ff34] text-black px-4 py-2 sm:px-9 sm:py-5 w-44 btn-hovernig"
+              >
+                LEARN MORE
+              </button>
+              <button
+                class="bg-[#e5ff34] text-black px-4 py-2 sm:px-9 sm:py-5 w-44 btn-hovernig"
+              >
+                SHOP
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide relative">
+          <!-- Image 3 -->
+          <img
+            src="https://focal-theme-carbon.myshopify.com/cdn/shop/files/heritage-lp-3.jpg?v=1630492874&width=1600"
+            alt="Slide 3"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute top-1/2 left-0 transform -translate-y-1/2 text-white ml-4 sm:ml-14 w-full mr-auto px-4 sm:px-0"
+          >
+            <h2
+              class="fade-up-col-1 text-xl sm:text-2xl md:text-3xl lg:text-4xl"
+            >
+              PREMIUM COLLECTION
+            </h2>
+            <p
+              class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl my-4 sm:my-8 font-bold flex flex-col"
+            >
+              <span class="fade-up-col-2">THE</span>
+              <span class="fade-up-col-3">HERITAGE</span>
+              <span class="fade-up-col-4">COLLECTION</span>
+            </p>
+            <div
+              class="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full fade-up-col-5"
+            >
+              <button
+                class="bg-[#e5ff34] text-black px-4 py-2 sm:px-9 sm:py-5 w-44 btn-hovernig"
+              >
+                LEARN MORE
+              </button>
+              <button
+                class="bg-[#e5ff34] text-black px-4 py-2 sm:px-9 sm:py-5 w-44 btn-hovernig"
+              >
+                SHOP
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination p-5"></div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>

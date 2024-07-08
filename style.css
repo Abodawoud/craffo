@@ -1,0 +1,269 @@
+/* Root variables */
+:root {
+  --text-color: #282828;
+}
+
+/* Navigation styling */
+nav {
+  background-color: hsl(0, 0%, 16%);
+  color: white;
+  position: sticky;
+  width: 100%;
+  top: 0px;
+  z-index: 10000;
+}
+
+.Focal-image {
+  width: 100%;
+  height: 100%;
+  max-width: 95px;
+}
+
+/* Navigator links styling */
+.navigator-links {
+  position: relative;
+  overflow: hidden;
+}
+
+.navigator-links::after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navigator-links:hover::after {
+  transform: scaleX(1);
+}
+
+.navigator-links:not(:hover)::after {
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Mega menu styling */
+.menu {
+  position: absolute;
+  z-index: 1000;
+  background-color: white;
+  color: var(--text-color);
+  top: 100%;
+  left: 0;
+  width: 100%;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.menu.show {
+  display: block;
+  opacity: 1;
+}
+
+.menu ul {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out 0.3s;
+}
+
+.menu.show ul {
+  opacity: 1;
+}
+
+.menu img {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out 0.6s;
+}
+
+.menu img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.fade-up {
+  animation: fadeUp 0.5s ease-in-out;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up-col-1 {
+  animation: fadeUpCol1 0.2s ease-in-out;
+}
+
+@keyframes fadeUpCol1 {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up-col-2 {
+  animation: fadeUpCol2 0.6s ease-in-out;
+}
+
+@keyframes fadeUpCol2 {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up-col-3 {
+  animation: fadeUpCol3 0.8s ease-in-out;
+}
+
+@keyframes fadeUpCol3 {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-up-col-4 {
+  animation: fadeUpCol4 1s ease-in-out;
+}
+
+@keyframes fadeUpCol4 {
+  0% {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up-col-5 {
+  animation: fadeUpCol5 1.2s ease-in-out;
+}
+
+@keyframes fadeUpCol5 {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* swiper-pagination */
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  border-radius: 0;
+  height: 2px;
+  margin: 0 2px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.49);
+  opacity: 1;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .swiper-pagination .swiper-pagination-bullet {
+    width: 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .swiper-pagination .swiper-pagination-bullet {
+    width: 80px;
+  }
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: white;
+  width: 0%;
+  animation: loadProgress 2.5s linear forwards;
+}
+
+@keyframes loadProgress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.btn-hovernig {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-hovernig::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: var(--text-color);
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  opacity: 0.1;
+  transform: scaley(0);
+  transform-origin: bottom;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.btn-hovernig:hover::after {
+  transform: scaley(1);
+}
+
+.badge {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -50%;
+  right: -50%;
+  font-size: 12px;
+  background-color: white;
+  color: var(--text-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
